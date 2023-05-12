@@ -1,0 +1,19 @@
+.ket_qua {
+    border: 2px solid #eee;
+    box-shadow: 5px 5px 5px   rgba(59, 59, 59, 0.479);  
+    width: 40%;
+    height: 50px;
+    margin: 30px auto;
+}
+.container {
+    border: 3px solid black;
+    border-radius: 30px;
+    padding: 50px;
+    margin: 50px auto;
+}
+input { width: 50%;}
+.chia_hang {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}

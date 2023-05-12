@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>JS Vòng Lặp</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+
+  <!-- ===============Bài 1=============== -->
+
+  <div class="container row mt-3">
+    <h1>Bài tập 1</h1>
+    <h3 class="alert alert-success">Tìm số nguyên dương nhỏ nhất để sum > 10000.</h3>
+
+    <!--  Nhập Thông Tin -->
+    <!-- <div class="mb-3 col-4">
+            <div class="mt-5 input-group">
+              <div class="input-group-prepend">
+                <button class="btn btn-outline-success text-body"><b> Nhập số n: </b></button>
+              </div>
+              <input type="text" class="form-control" name="" id="soTuNhien" placeholder="Nhập số:">
+            </div>
+          </div> -->
+
+    <!-- Số N  -->
+    <div class="input-group-prepend text-center mt-2 mx-2">
+      <button class="btn btn-warning text-bg-dark px-4" id="timSo" onclick="timSoN()">Tìm số N &ensp; <i
+          class="fa-solid fa-right-to-bracket fa-rotate-90"></i></button>
+    </div>
+    <div class="ket_qua text-black text-center rounded-5 py-2 px-4 w-100" id="timNguyenDuong"></div>
+  </div>
+
+  <!-- ========BÀi 2================= -->
+  <div class="container row mt-3">
+    <h1>Bài tập 2</h1>
+    <h3 class="alert alert-success">Tính x + x^2 + ... + x^n </h3>
+    <div class="chia_hang">
+      <!--  Nhập Thông Tin -->
+      <div class="mb-3 col-4">
+        <div class="mt-5 input-group">
+          <div class="input-group-prepend">
+            <button class="btn btn-outline-success text-body"><b> Nhập số n: </b></button>
+          </div>
+          <input type="text" class="form-control" name="" id="soN" placeholder="Nhập số:">
+        </div>
+        <!--Nhâp x -->
+        <div class="mt-5 input-group">
+          <div class="input-group-prepend">
+            <button class="btn btn-outline-success">Số X</button>
+          </div>
+          <input type="text" class="form-control" name="" id="soX" placeholder="Nhập số X">
+        </div>
+      </div>
+    </div>
+    <!-- Tính S(n)  -->
+    <div class="input-group-prepend text-center mt-2 mx-2">
+      <button class="btn btn-warning text-bg-dark px-4" id="tinhDiem" onclick="tinhS()">Tính S(n) = &ensp; <i
+          class="fa-solid fa-right-to-bracket fa-rotate-90"></i></button>
+    </div>
+    <div class="ket_qua text-black text-center rounded-5 py-2 px-4 w-100" id="tinhKetQuaS"></div>
+  </div>
+  </div>
+  <!-- ==============Bài 3================= -->
+  <div class="container row mt-3">
+    <h1>Bài tập 3</h1>
+    <h3 class="alert alert-success">Tính giai thừa</h3>
+
+    <!--  Nhập Thông Tin -->
+    <div class="mb-3 col-4">
+      <div class="mt-5 input-group">
+        <div class="input-group-prepend">
+          <button class="btn btn-outline-success text-body"><b> Nhập số n: </b></button>
+        </div>
+        <input type="text" class="form-control" name="" id="soNguyenN" placeholder="Nhập số:">
+      </div>
+    </div>
+
+    <!-- Số N  -->
+    <div class="input-group-prepend text-center mt-2 mx-2">
+      <button class="btn btn-warning text-bg-dark px-4" id="tinhGiaiThua" onclick="tinhGiaiThuaN()">Tính giai thừa n
+        &ensp; <i class="fa-solid fa-right-to-bracket fa-rotate-90"></i></button>
+    </div>
+    <!-- <div class="ket_qua text-black text-center rounded-5 py-2 px-4 w-100" id="tinhNguyenDuongN"></div> -->
+  </div>
+  <!-- ===========Bài 4========== -->
+  <div class="container row mt-3">
+    <h1>Bài tập 4</h1>
+    <h3 class="alert alert-success ">In ra 10 thẻ div</h3>
+    <div class="input-group-prepend text-center mt-2 mx-2">
+      <button class="btn btn-warning text-bg-dark px-4" id="inThe" onclick="inTheDiv()">In thẻ div &ensp; <i
+          class="fa-solid fa-right-to-bracket fa-rotate-90"></i></button>
+    </div>
+    <div class="p-4" id="inXanhDo"></div>
+  </div>
+  <!-- ===========Bài 5=============== -->
+  <div class="container row mt-3">
+    <h1>Bài tập 5</h1>
+    <h3 class="alert alert-success">Số N</h3>
+    <div class="mb-3 col-4">
+      <div class="mt-5 input-group">
+        <div class="input-group-prepend">
+          <button class="btn btn-outline-success text-body"><b> Nhập số Nguyên Tố: </b></button>
+        </div>
+        <input type="text" class="form-control" name="" id="soNguyenTo" placeholder="Nhập số:">
+      </div>
+    </div>
+
+    <!-- Số N  -->
+    <div class="input-group-prepend text-center mt-2 mx-2">
+      <button class="btn btn-warning text-bg-dark px-4" id="inSoNguyenTo" onclick="inSoNguyenTo()">Số nguyên tố: &ensp;
+        <i class="fa-solid fa-right-to-bracket fa-rotate-90"></i></button>
+    </div>
+    <div class="ket_qua text-black text-center rounded-5 py-2 px-4 w-100" id="ketQuaNguyenTo"></div>
+  </div>
+
+
+
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+    </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+    </script>
+  <script src="./index.js"></script>
+</body>
+
+</html>
